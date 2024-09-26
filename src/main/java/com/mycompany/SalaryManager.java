@@ -73,18 +73,14 @@ public class SalaryManager {
     public void printSalariesByEmployee(Position position) {
         String format = "Total %s salaries: %s\n";
         switch (position) {
-            case PROGRAMMER -> {
+            case PROGRAMMER ->
                 System.out.printf(format, "programmers", formatToCurrency(totalProgrammersSalary));
-            }
-            case ANALYST -> {
+            case ANALYST ->
                 System.out.printf(format, "analysts", formatToCurrency(totalAnalystsSalary));
-            }
-            case MANAGER -> {
+            case MANAGER ->
                 System.out.printf(format, "managers", formatToCurrency(totalManagersSalary));
-            }
-            case CEO -> {
+            case CEO ->
                 System.out.printf(format, "CEO's", formatToCurrency(totalCeosSalary));
-            }
         }
     }
 
