@@ -1,4 +1,6 @@
-package com.company.sm;
+package com.company.employee.roles;
+
+import com.company.employee.Employee;
 
 public class CEO extends Employee {
     private static final int BONUS_AMOUNT = 7000;

@@ -1,4 +1,9 @@
-package com.company.sm;
+package com.company.employee;
+
+import com.company.employee.roles.Analyst;
+import com.company.employee.roles.CEO;
+import com.company.employee.roles.Manager;
+import com.company.employee.roles.Programmer;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

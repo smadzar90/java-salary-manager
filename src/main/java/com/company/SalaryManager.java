@@ -1,4 +1,7 @@
-package com.company.sm;
+package com.company;
+
+import com.company.employee.*;
+import com.company.employee.roles.*;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;

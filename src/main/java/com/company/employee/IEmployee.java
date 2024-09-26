@@ -1,4 +1,4 @@
-package com.company.sm;
+package com.company.employee;
 
 public interface IEmployee {
     void calculateSalary();
