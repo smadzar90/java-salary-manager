@@ -1,4 +1,4 @@
-package com.mycompany;
+package com.company.sm;
 
 public abstract class Employee implements IEmployee {
     private final String firstName;

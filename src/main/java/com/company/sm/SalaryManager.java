@@ -1,4 +1,4 @@
-package com.mycompany;
+package com.company.sm;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;

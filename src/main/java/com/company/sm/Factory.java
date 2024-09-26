@@ -1,4 +1,4 @@
-package com.mycompany;
+package com.company.sm;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

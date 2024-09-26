@@ -1,4 +1,4 @@
-package com.mycompany;
+package com.company.sm;
 
 public class CEO extends Employee {
     private static final int BONUS_AMOUNT = 7000;
