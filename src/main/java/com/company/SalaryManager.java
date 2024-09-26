@@ -31,7 +31,7 @@ public class SalaryManager {
 
     public void computeCompanySalaries() {
         String workersRegex = """
-              (?<lastName>\\w+),\\s*(?<firstName>\\w+),\\s*(?<dob>\\d{4}-\\d{1,2}-\\d{1,2}).*,\\s(?<position>\\w+),\\s\\{(?<details>.*)}\\n
+        (?<lastName>\\w+),\\s*(?<firstName>\\w+),\\s*(?<dob>\\d{4}-\\d{1,2}-\\d{1,2}).*,\\s(?<position>\\w+),\\s\\{(?<details>.*)}\\n
         """;
 
         Pattern pat = Pattern.compile(workersRegex, Pattern.COMMENTS);

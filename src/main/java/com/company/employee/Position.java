@@ -4,5 +4,5 @@ public enum Position {
     PROGRAMMER,
     ANALYST,
     MANAGER,
-    CEO;
+    CEO
 }
