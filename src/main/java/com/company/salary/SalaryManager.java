@@ -1,4 +1,4 @@
-package com.company;
+package com.company.salary;
 
 import com.company.employee.*;
 import com.company.employee.roles.*;
