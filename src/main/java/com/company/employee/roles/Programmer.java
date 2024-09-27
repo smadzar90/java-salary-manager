@@ -18,8 +18,11 @@ public class Programmer extends Employee {
 
     @Override
     public void calculateSalary() {
-        int baseSalary = 65000;
-        int calculatedSalary = baseSalary + (locpd * yoe * iq) / 100 + BONUS_AMOUNT;
+        int baseSalary = 100000;
+        int productivityBonus = (locpd * 5);
+        int experienceBonus = 3000 * yoe;
+        int performanceBonus = iq * 50;
+        int calculatedSalary = baseSalary + productivityBonus + experienceBonus + performanceBonus + BONUS_AMOUNT;
         super.setSalary(calculatedSalary);
     }
 

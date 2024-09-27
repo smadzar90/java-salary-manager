@@ -16,8 +16,9 @@ public class Manager extends Employee {
 
     @Override
     public void calculateSalary() {
-        int baseSalary = 65000;
-        int calculatedSalary = baseSalary + (orgSize * directReports * 3) + BONUS_AMOUNT;
+        int baseSalary = 120000;
+        int teamBonus = orgSize * directReports * 20;
+        int calculatedSalary = baseSalary + teamBonus + BONUS_AMOUNT;
         super.setSalary(calculatedSalary);
     }
 

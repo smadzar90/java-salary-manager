@@ -65,7 +65,7 @@ public class SalaryManager {
         }
     }
 
-    private String formatToCurrency(int salary) {
+    public static String formatToCurrency(int salary) {
         return NumberFormat.getCurrencyInstance().format(salary);
     }
 

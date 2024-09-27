@@ -1,5 +1,7 @@
 package com.company.employee;
 
+import com.company.salary.SalaryManager;
+
 public abstract class Employee implements IEmployee {
     private final String firstName;
     private final String lastName;
@@ -33,11 +35,9 @@ public abstract class Employee implements IEmployee {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + "{" +
-               "firstName='" + getFirstName() + '\'' +
-               ", lastName='" + getLastName() + '\'' +
-               ", dateOfBirth='" + getDateOfBirth() + '\'' +
-               ", salary=" + getSalary() +
-               '}';
+        return getClass().getSimpleName() + " " +
+               getFirstName() + " " +
+               getLastName() + " - " +
+               SalaryManager.formatToCurrency(getSalary());
     }
 }
