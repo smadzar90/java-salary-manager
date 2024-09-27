@@ -9,8 +9,8 @@ com.mycompany
 ├── employee                        
 │   ├── Employee.java                 // Abstract class representing a generic employee
 │   ├── IEmployee.java                // Interface defining employee methods
-│   ├── EmployeeFactory.java          // Factory design pattern for creating Employee instances
-│   ├── EmployeePosition.java         // Enum representing employee positions
+│   ├── Factory.java                  // Factory design pattern for creating Employee instances
+│   ├── Position.java                 // Enum representing employee positions
 │   └── roles                      
 │       ├── Programmer.java           // Concrete class representing a programmer
 │       ├── Manager.java              // Concrete class representing a manager
