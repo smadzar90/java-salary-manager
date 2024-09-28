@@ -14,8 +14,9 @@ public class Analyst extends Employee {
 
     @Override
     public void calculateSalary() {
-        int baseSalary = 55000;
-        int calculatedSalary = baseSalary + (pCount * 2000) + BONUS_AMOUNT;
+        int baseSalary = 90000;
+        int projectBonus = (pCount * 1500);
+        int calculatedSalary = baseSalary + projectBonus + BONUS_AMOUNT;
         super.setSalary(calculatedSalary);
     }
 

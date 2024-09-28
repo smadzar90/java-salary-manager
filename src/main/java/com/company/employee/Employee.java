@@ -26,10 +26,6 @@ public abstract class Employee implements IEmployee {
         return lastName;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
-    }
-
     public abstract int getSalary();
     public abstract void calculateSalary();
 

@@ -14,8 +14,9 @@ public class CEO extends Employee {
 
     @Override
     public void calculateSalary() {
-        int baseSalary = 90000;
-        int calculatedSalary = baseSalary + (avgStockPrice * 50) + BONUS_AMOUNT;
+        int baseSalary = 140000;
+        int stockBonus = avgStockPrice * 100;
+        int calculatedSalary = baseSalary + stockBonus + BONUS_AMOUNT;
         super.setSalary(calculatedSalary);
     }
 
