@@ -1,6 +1,6 @@
 ### Description
 
-A simple Java application designed to efficiently calculate and manage employee salaries based on their distinct roles and attributes. The application processes employee data in a structured format, and computes company salaries. Utilizing OOP principles, the system promotes reusability and maintainability in its architecture.
+A simple Java application designed to calculate and manage employee salaries based on their distinct roles and attributes. The application processes employee data in a structured format, and computes company salaries. Utilizing OOP principles, the system promotes reusability and maintainability in its architecture.
 
 ### Project Structure
 
