@@ -1,0 +1,16 @@
+Flinstone, Fred, 1900-01-01, Programmer, {locpd=2000, yoe=10, iq=140}
+Flinstone, Fred, 1900-01-01, Prrrrogrammer, {locpd=2000, yoe=10, iq=140}
+Rubble, Barney, 1905-02-02, Manager, {orgSize=100, dr=10}
+Flinstone, Wilma, 1910-03-03, Analyst, {projectCount=5}
+Genert, Wilma, 1910-03-03, CEO, {avgStockPrice=300}
+Smith, Alice, 1985-05-15, Programmer, {locpd=2500, yoe=5, iq=130}
+Johnson, Bob, 1990-08-22, Programmer, {locpd=2200, yoe=3, iq=125}
+Lee, Charlie, 1992-12-30, Programmer, {locpd=1800, yoe=2, iq=120}
+Brown, David, 1980-11-11, Manager, {orgSize=150, dr=12}
+Miller, Emma, 1988-04-04, Manager, {orgSize=200, dr=15}
+Davis, Fiona, 1995-09-09, Analyst, {projectCount=8}
+Wilson, George, 1982-01-20, Analyst, {projectCount=10}
+Taylor, Hannah, 1975-06-06, CEO, {avgStockPrice=500}
+Anderson, Ian, 1960-03-03, CEO, {avgStockPrice=450}
+Anderson, Ian, 1960notCorrectData-03-03, CEO, {avgStockPrice=450}
+

@@ -3,6 +3,9 @@ package com.company.salary;
 import com.company.employee.*;
 import com.company.employee.roles.*;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -40,10 +43,11 @@ public class SalaryManager {
         while(mat.find()) {
             Employee employee = Factory.createEmployee(mat.group("firstName"), mat.group("lastName"), mat.group("dob"),
                     mat.group("position"), mat.group("details"));
-            assert employee != null;
-            totalSalary += employee.getSalary();
-            addSalaryToEmployee(employee);
-            employees.add(employee);
+            if(employee != null) {
+                totalSalary += employee.getSalary();
+                addSalaryToEmployee(employee);
+                employees.add(employee);
+            }
         }
     }
 
@@ -104,23 +108,14 @@ public class SalaryManager {
     }
 
     public static void main(String[] args) {
-        //LastName, FirstName, DOB, Position, {Details}
-        String sampleData = """
-                Flinstone, Fred, 1900-01-01, Programmer, {locpd=2000, yoe=10, iq=140}
-                Rubble, Barney, 1905-02-02, Manager, {orgSize=100, dr=10}
-                Flinstone, Wilma, 1910-03-03, Analyst, {projectCount=5}
-                Genert, Wilma, 1910-03-03, CEO, {avgStockPrice=300}
-                Smith, Alice, 1985-05-15, Programmer, {locpd=2500, yoe=5, iq=130}
-                Johnson, Bob, 1990-08-22, Programmer, {locpd=2200, yoe=3, iq=125}
-                Lee, Charlie, 1992-12-30, Programmer, {locpd=1800, yoe=2, iq=120}
-                Brown, David, 1980-11-11, Manager, {orgSize=150, dr=12}
-                Miller, Emma, 1988-04-04, Manager, {orgSize=200, dr=15}
-                Davis, Fiona, 1995-09-09, Analyst, {projectCount=8}
-                Wilson, George, 1982-01-20, Analyst, {projectCount=10}
-                Taylor, Hannah, 1975-06-06, CEO, {avgStockPrice=500}
-                Anderson, Ian, 1960-03-03, CEO, {avgStockPrice=450}
-            """;
-        SalaryManager sm = new SalaryManager(sampleData);
-        sm.printCompanyInfo();
+        Path filePath = Path.of("src/main/java/com/company/files/employees.txt");
+
+        try {
+            String sampleData = Files.readString(filePath);
+            SalaryManager sm = new SalaryManager(sampleData);
+            sm.printCompanyInfo();
+        } catch (IOException e) {
+            System.out.println("The file could not be found!");
+        }
     }
 }
